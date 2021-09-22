@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+// COLOR VARIABLES
+$color-primary: #f67949;
+$color-secondary: #de5b43;
+$color-ternary: #faf6f0;
+
+$color-grey-1: #9c9c9c;
+$color-grey-2: #7b7b7b;
+$color-grey-3: #2c2c2c;
+$color-grey-4: #eeeeee;
+$color-grey-5: #aca8a8;
+$color-grey-6: #dfdfdf;
+$color-grey-7: #361619;
+
+$color-shadow: rgba(51, 51, 51, 0.1);
+
+$color-white: #fff;
+
+// FONT VARIABLES
+$font-primary: "Quicksand", sans-serif;
+
+// BREAKPOINTS
+$bp-large: 64em; // 1024px
+$bp-medium: 50em; // 800px
+$bp-small: 40em; // 640px
+$bp-smallest: 30em; // 480px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 16px
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-3;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0 1.5rem;
+  }
+}

@@ -1,0 +1,33 @@
+.community {
+  padding: 8rem;
+  padding-bottom: 6rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6rem 2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 4rem 2rem;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading,
+  &__sub-heading {
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 100rem;
+  }
+
+  &__img {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}

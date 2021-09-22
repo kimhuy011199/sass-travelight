@@ -1,0 +1,56 @@
+.about {
+  background-color: $color-white;
+  padding-top: 12rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 8rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 8rem;
+    border-bottom: 1px solid $color-grey-4;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__title {
+    max-width: 42rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    align-self: start;
+  }
+
+  &__img {
+    margin-top: 5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-weight: 500;
+    color: $color-primary;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-grey-7;
+  }
+}

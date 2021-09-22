@@ -1,0 +1,66 @@
+.btn {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1.2rem 2.6rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  border-radius: 100rem;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.1rem;
+  }
+
+  &--white:link,
+  &--white:visited {
+    align-self: start;
+    display: block;
+    background-color: $color-white;
+    color: $color-primary;
+  }
+
+  &--white:hover,
+  &--white:active {
+    color: $color-white;
+    background-color: $color-primary;
+    transform: translateY(-0.3rem);
+  }
+
+  &--primary:link,
+  &--primary:visited {
+    display: block;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--primary:hover,
+  &--primary:active {
+    transform: translateY(-0.3rem);
+  }
+
+  &--text:link,
+  &--text:visited {
+    display: block;
+    padding: 0;
+    color: $color-primary;
+    font-weight: 500;
+  }
+
+  &--text:hover,
+  &--text:active {
+    color: $color-grey-7;
+  }
+
+  &--outline:link,
+  &--outline:visited {
+    display: block;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  &--outline:hover,
+  &--outline:active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
